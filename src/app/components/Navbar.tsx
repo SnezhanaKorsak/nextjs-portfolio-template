@@ -9,7 +9,6 @@ import MenuOverlay from '@/app/components/MenuOverlay';
 
 import { navLinks } from '@/app/constants';
 
-
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
