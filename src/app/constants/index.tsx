@@ -82,3 +82,22 @@ export const projectsData = [
     tag: ["All", "Web"],
   },
 ];
+
+export const achievementsList = [
+  {
+    metric: "Projects",
+    value: "100+",
+  },
+  {
+    metric: "Users",
+    value: "1M+",
+  },
+  {
+    metric: "Awards",
+    value: "10+",
+  },
+  {
+    metric: "Years",
+    value: "5+",
+  },
+];
