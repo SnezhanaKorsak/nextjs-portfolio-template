@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:ts": "yarn dev & yarn ts:watch",
     "build": "next build",
     "build:local": "prettier --write . && next build",
     "start": "next start",
     "lint": "prettier --check . && next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "ts": "tsc --noEmit --incremental",
+    "ts:watch": "yarn ts --watch"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
