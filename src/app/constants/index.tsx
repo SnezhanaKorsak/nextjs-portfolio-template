@@ -45,6 +45,8 @@ export const projectsData = [
     description: "Project 1 description",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 2,
@@ -52,6 +54,8 @@ export const projectsData = [
     description: "Project 2 description",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 3,
@@ -59,6 +63,8 @@ export const projectsData = [
     description: "Project 3 description",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 4,
@@ -66,6 +72,8 @@ export const projectsData = [
     description: "Project 4 description",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 5,
@@ -73,6 +81,8 @@ export const projectsData = [
     description: "Authentication and CRUD operations",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 6,
@@ -80,24 +90,34 @@ export const projectsData = [
     description: "Project 5 description",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
 ];
 
 export const achievementsList = [
   {
+    prefix: "",
     metric: "Projects",
-    value: "100+",
+    value: "100",
+    postfix: "+",
   },
   {
+    prefix: "~",
     metric: "Users",
-    value: "1M+",
+    value: "1 000",
+    postfix: "",
   },
   {
+    prefix: "",
     metric: "Awards",
-    value: "10+",
+    value: "10",
+    postfix: "+",
   },
   {
+    prefix: "",
     metric: "Years",
-    value: "5+",
+    value: "5",
+    postfix: "+",
   },
 ];
