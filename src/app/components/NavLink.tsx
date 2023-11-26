@@ -1,9 +1,9 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 type Props = {
   href: string;
   title: string;
-}
+};
 
 const NavbarLink = ({ href, title }: Props) => {
   return (

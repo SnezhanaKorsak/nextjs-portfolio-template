@@ -2,12 +2,12 @@ type Props = {
   name: string;
   isSelected: boolean;
   onClick: (name: string) => void;
-}
+};
 
 const ProjectTag = ({ name, onClick, isSelected }: Props) => {
   const buttonStyles = isSelected
     ? "text-white border-primary-500"
-    : 'text-[#ADB7BE] border-slate-600 hover:border-white';
+    : "text-[#ADB7BE] border-slate-600 hover:border-white";
 
   return (
     <button

@@ -1,15 +1,15 @@
 export const navLinks = [
   {
-    path: '#about',
-    title: 'About',
+    path: "#about",
+    title: "About",
   },
   {
-    path: '#projects',
-    title: 'Projects',
+    path: "#projects",
+    title: "Projects",
   },
   {
-    path: '#contact',
-    title: 'Contact',
+    path: "#contact",
+    title: "Contact",
   },
 ];
 
@@ -23,7 +23,7 @@ export const TAB_DATA = [
         <li>NextJS</li>
         <li>PostgreSQL</li>
         <li>MongoDB</li>
-        </ul>
+      </ul>
     ),
   },
   {

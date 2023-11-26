@@ -1,19 +1,19 @@
-'use client';
-import { useState, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+"use client";
+import { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
-import ProjectCard from './ProjectCard';
-import ProjectTag from './ProjectTag';
+import ProjectCard from "./ProjectCard";
+import ProjectTag from "./ProjectTag";
 
-import { projectsData } from '@/app/constants';
+import { projectsData } from "@/app/constants";
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState('All');
+  const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
+    project.tag.includes(tag),
   );
 
   const handleTagChange = (newTag: string) => {
@@ -34,17 +34,17 @@ const ProjectsSection = () => {
         <ProjectTag
           name="All"
           onClick={handleTagChange}
-          isSelected={tag === 'All'}
+          isSelected={tag === "All"}
         />
         <ProjectTag
           name="Web"
           onClick={handleTagChange}
-          isSelected={tag === 'Web'}
+          isSelected={tag === "Web"}
         />
         <ProjectTag
           name="Mobile"
           onClick={handleTagChange}
-          isSelected={tag == 'Mobile'}
+          isSelected={tag == "Mobile"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -53,7 +53,7 @@ const ProjectsSection = () => {
             key={index}
             variants={cardVariants}
             initial="initial"
-            animate={isInView ? 'animate' : 'initial'}
+            animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
             <ProjectCard

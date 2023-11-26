@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:local": "prettier --write . && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "prettier --check . && next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -19,14 +21,20 @@
     "resend": "^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
     "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "^14.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
     "postcss": "^8",
+    "prettier": "^3.1.0",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "typescript": "^5.3.2"
   }
 }

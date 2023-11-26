@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-import TypeAnimationTitle from '@/app/components/TypeAnimationTitle';
+import TypeAnimationTitle from "@/app/components/TypeAnimationTitle";
 
 const HeroSection = () => {
   return (
@@ -20,7 +20,7 @@ const HeroSection = () => {
               Hello, I&apos;m{" "}
             </span>
             <br></br>
-            <TypeAnimationTitle/>
+            <TypeAnimationTitle />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,

@@ -1,14 +1,15 @@
-'use client'
+"use client";
 
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-import { achievementsList } from '@/app/constants';
+import { achievementsList } from "@/app/constants";
 
-const AnimatedNumbers = dynamic(() => {
-    return import('react-animated-numbers')
+const AnimatedNumbers = dynamic(
+  () => {
+    return import("react-animated-numbers");
   },
-  { ssr: false }
-)
+  { ssr: false },
+);
 
 const AchievementsSection = () => {
   return (
@@ -26,12 +27,12 @@ const AchievementsSection = () => {
                 animateToNumber={parseInt(achievement.value)}
                 locale="en-US"
                 className="text-white text-4xl font-bold"
-                configs={(_,index) => {
+                configs={(_, index) => {
                   return {
                     mass: 1,
                     friction: 100,
-                    tension: 140 * (index + 1)
-                  }
+                    tension: 140 * (index + 1),
+                  };
                 }}
               />
               {achievement.postfix}

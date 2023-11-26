@@ -1,7 +1,7 @@
 type EmailTemplateProps = {
   subject: string;
   message: string;
-}
+};
 
 const EmailTemplate = ({ subject, message }: EmailTemplateProps) => (
   <div>
