@@ -23,7 +23,6 @@ const AchievementsSection = () => {
             <h2 className="text-white text-4xl font-bold flex flex-row">
               {achievement.prefix}
               <AnimatedNumbers
-                includeComa
                 animateToNumber={parseInt(achievement.value)}
                 locale="en-US"
                 className="text-white text-4xl font-bold"
