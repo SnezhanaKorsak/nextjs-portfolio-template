@@ -9,7 +9,7 @@ const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  const tabData = TAB_DATA.find((t) => t.id === tab).content;
+  const tabData = TAB_DATA.find((t) => t.id === tab)?.content || "";
 
   const handleTabChange = (id: string) => {
     startTransition(() => {
@@ -54,7 +54,7 @@ const AboutSection = () => {
               Education
             </TabButton>
           </div>
-          <div className="mt-8">{tabData && ""}</div>
+          <div className="mt-8">{tabData}</div>
         </div>
       </div>
     </section>
